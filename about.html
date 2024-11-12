@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiet - ¿Por qué Quiet?</title>
+    <!-- Enlace a estilos y fuentes -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="about-page">
+    <!-- Encabezado con barra de navegación -->
+    <header>
+      <nav>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="images/quiet.png" alt="Quiet Logo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links menu-horizontal">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="about.html">¿Por qué Quiet?</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <!-- Botón para iniciar sesión -->
+        <a href="login-in.html" class="download-button">Iniciar sesión</a>
+      </nav>
+    </header>
+
+    <!-- Sección de contenido principal -->
+    <section id="about" class="about-us">
+      <div class="about-content">
+        <!-- Imagen principal de la sección -->
+        <img
+          src="images/why-quiet.png"
+          alt="¿Por qué Quiet?"
+          class="why-quiet-image"
+        />
+        <div class="about-container">
+          <!-- Imagen ilustrativa -->
+          <img
+            src="images/about-us.png"
+            alt="Grupo de personas"
+            class="about-image"
+          />
+          <div class="about-text">
+            <p>
+              Quiet ofrece una solución práctica y accesible. Esta aplicación
+              intuitiva permite a los usuarios medir y analizar en tiempo real
+              los niveles de ruido en su entorno, ayudándoles a reducir su
+              exposición al mismo y, en consecuencia, mejorar su calidad de
+              vida.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página con enlaces adicionales -->
+    <footer>
+      <p>&copy; 2024 Quiet. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </footer>
+    <script src="responsive.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiet - Medición de Ruido</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="user-interface-page">
+    <!-- Encabezado con barra de navegación -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="images/quiet.png" alt="Quiet Logo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links menu-horizontal">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="about.html">¿Por qué Quiet?</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <a href="user-interface.html" class="user-icon">
+          <img src="images/user-icon.png" alt="User Icon" class="user-image" />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Contenido principal para Medición -->
+    <main id="inicio" class="measurement-content">
+      <div class="measurement-container">
+        <!-- Imagen de medición -->
+        <div class="measurement-image-container">
+          <img
+            src="images/medicion.png"
+            alt="Medición de Ruido"
+            class="measurement-image"
+          />
+        </div>
+        <!-- Texto introductorio y botón -->
+        <div class="measurement-text-container">
+          <h2 class="measurement-title">Medición de Ruido</h2>
+          <p class="measurement-description">
+            Descubre los niveles de ruido en tu entorno en tiempo real. Con
+            nuestra herramienta de medición, puedes localizar áreas más
+            tranquilas y reducir la contaminación acústica en tu vida diaria.
+          </p>
+          <!-- Botón que lleva a la sección de datos -->
+          <a href="#seccion-datos" class="measurement-button"
+            >Comenzar Medición</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- Nueva sección de datos dentro de un cuadro -->
+    <section id="seccion-datos" class="data-section-box">
+      <div class="data-header">
+        <h2 class="data-title">Medición</h2>
+        <div class="data-nav-buttons">
+          <button class="nav-button active">Avance</button>
+          <button class="nav-button">Recientes</button>
+          <button class="nav-button">Historial</button>
+        </div>
+      </div>
+      <hr class="data-divider" />
+      <div class="data-cards">
+        <div class="data-card">
+          <img src="images/medicion1.png" alt="Nivel Saturado" />
+          <h3>Nivel Saturado</h3>
+          <p>+80 dB</p>
+          <p>Se recomienda buscar otro lugar</p>
+        </div>
+        <div class="data-card">
+          <img src="images/medicion2.png" alt="Exceso de ruido" />
+          <h3>Exceso de ruido</h3>
+          <p>+99 dB</p>
+          <p>Se recomienda buscar otro lugar</p>
+        </div>
+        <div class="data-card">
+          <img src="images/medicion3.png" alt="Exceso de ruido alto" />
+          <h3>Exceso de ruido</h3>
+          <p>+100 dB</p>
+          <p>Se recomienda buscar otro lugar</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Quiet. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </footer>
+    <script src="responsive.js"></script>
+  </body>
+</html>

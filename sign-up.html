@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiet - Crear Cuenta</title>
+    <!-- Enlace a estilos y fuentes -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="login-page">
+    <!-- Contenedor principal para la creación de cuenta -->
+    <main class="login-content">
+      <div class="login-container">
+        <!-- Logo de Quiet -->
+        <img src="images/quiet.png" alt="Quiet Logo" class="login-logo" />
+        <!-- Formulario de registro de usuario -->
+        <form action="user-interface.html" method="get">
+          <div class="form-group">
+            <label for="username">Nombre de usuario</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+          <button type="submit" class="login-button">Crear Cuenta</button>
+        </form>
+        <!-- Opción para registro con redes sociales -->
+        <p class="or">o</p>
+        <div class="social-login">
+          <a href="#"
+            ><img
+              src="images/google.png"
+              alt="Registrarse con Google"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="images/facebook.png"
+              alt="Registrarse con Facebook"
+              class="social-icon"
+          /></a>
+        </div>
+        <!-- Enlace para iniciar sesión si ya tiene cuenta -->
+        <p class="signup-text">
+          ¿Ya tienes una cuenta?
+          <a href="login-in.html" class="signup-link">Inicia sesión aquí</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

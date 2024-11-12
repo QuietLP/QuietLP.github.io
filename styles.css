@@ -1,0 +1,832 @@
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  color: #2c3e50;
+  overflow-y: auto;
+  height: auto;
+  background-color: #f7f7f7;
+}
+
+/* Contenedor de la página principal */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Contenedor de contenido central */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 150px);
+  text-align: center;
+  padding: 20px;
+}
+
+/* Barra de Navegación */
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header nav .logo img {
+  height: 40px;
+}
+
+/* Lista de enlaces en la barra de navegación */
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* Enlaces de navegación */
+header nav .nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+header nav .nav-links li a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* Botón de descarga en el menú */
+header nav .download-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+header nav .download-button:hover {
+  background-color: #333;
+}
+
+/* Sección Principal */
+.hero {
+  max-width: 550px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.hero .lema-image {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/* Contenedor para el texto de subdescripción y botón */
+.subtext-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Botón de exploración */
+.explore-button {
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.explore-button:hover {
+  background-color: #333;
+}
+
+/* Sección ¿Por qué Quiet? */
+.about-us {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 20px;
+  background-color: #fff;
+  min-height: 80vh;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.why-quiet-image {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  width: 38%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  width: 45%;
+  max-width: 450px;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+/* Enlaces en el pie de página */
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #000;
+}
+
+/* Página de Inicio de Sesión */
+.login-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+/* Contenedor principal del formulario de inicio de sesión */
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilos de texto en el contenedor de inicio de sesión */
+.login-container h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Grupo de formularios */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Enlace para contraseña olvidada */
+.forgot-password {
+  display: inline-block;
+  margin: 10px 0 20px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #000;
+}
+
+/* Botón principal de inicio de sesión */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+/* Texto y enlace para registrarse */
+.signup-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #555;
+}
+
+/* Separador para redes sociales */
+.or {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilos de los íconos de redes sociales */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-login .social-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Estilos para la interfaz de usuario */
+.user-interface-page {
+  overflow: hidden;
+}
+
+.user-icon .user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Contenido principal de la interfaz de usuario */
+.user-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+/* Grupo de botones de acción */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.welcome-user {
+  max-width: 400px;
+}
+
+/* Contenedor principal para la sección de Medición */
+.measurement-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  min-height: 80vh;
+}
+
+/* Contenedor de imagen y texto */
+.measurement-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px; /* Ancho máximo para mantener consistencia */
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  height: 350px; /* Altura fija para un tamaño consistente */
+}
+
+/* Estilos para el contenedor de la imagen */
+.measurement-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px; /* Tamaño máximo de la imagen */
+}
+
+.measurement-image {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover; /* Ajuste para cubrir el espacio del contenedor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor y estilos para el texto */
+.measurement-text-container {
+  flex: 1;
+  text-align: left;
+}
+
+/* Título de la sección */
+.measurement-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.measurement-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Botón de acción */
+.measurement-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.measurement-button:hover {
+  background-color: #333;
+}
+
+/* Cuadro para la sección de datos */
+.data-section-box {
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* Otros estilos de la sección de datos */
+.data-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.data-title {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.data-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Línea divisoria */
+.data-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Estilos de las tarjetas de datos */
+.data-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.data-card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+
+.data-card img {
+  width: 100%;
+  height: auto;
+}
+
+.data-card h3 {
+  font-size: 1.25rem;
+  margin-top: 15px;
+  color: #2c3e50;
+}
+
+.data-card p {
+  color: #555;
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Contenedor principal para la sección de Localización */
+.location-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  min-height: 80vh;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  height: 350px;
+}
+
+.location-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+
+.location-image {
+  width: 100%;
+  height: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.location-text-container {
+  flex: 1;
+  text-align: left;
+}
+
+.location-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.location-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.location-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.location-button:hover {
+  background-color: #333;
+}
+
+/* Estilo para el cuadro de la sección de ubicaciones */
+.data-section-box {
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.data-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.data-title {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.data-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button.active,
+.nav-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.data-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+/* Tarjetas de ubicación */
+.data-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.data-card {
+  width: 280px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 20px;
+}
+
+.data-card h3 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.data-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 10px 0 15px;
+  line-height: 1.5;
+}
+
+.location-card-button {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.location-card-button:hover {
+  text-decoration: underline;
+}
+/* Menú telefono */
+.menu-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-horizontal li {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-horizontal {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #c7c1c1;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+  }
+
+  .menu-horizontal.menu_opened {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .menu-horizontal a::after {
+    content: none;
+  }
+}
+
+.menu-horizontal a {
+  color: black;
+  line-height: 70px;
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.open-menu {
+  display: block; /* Muestra el botón de abrir menú */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close-menu {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 20px;
+  align-self: flex-end;
+}
+
+.menu-horizontal {
+  display: none;
+}
+
+.open-menu {
+  display: block;
+}
+
+.open-menu:focus:not(:focus-visible),
+.close-menu:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+  .open-menu {
+    display: none;
+  }
+}
+. .menu-horizontal {
+  display: flex;
+  position: static;
+}
+
+.close-menu {
+  display: none;
+}

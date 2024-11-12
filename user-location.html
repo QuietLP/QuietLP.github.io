@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiet - Localización de Lugares</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Newsreader:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="user-interface-page">
+    <!-- Encabezado con barra de navegación -->
+    <header>
+      <nav>
+        <a href="index.html" class="logo">
+          <img src="images/quiet.png" alt="Quiet Logo" />
+        </a>
+        <button class="open-menu" aria-label="Abrir menú">
+          <img src="img/hamburger-icon.svg" alt="abrir menú" />
+        </button>
+        <!-- Enlaces de navegación -->
+        <ul class="nav-links menu-horizontal">
+          <button class="close-menu" aria-label="Cerrar menú">
+            <img src="img/close-icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="about.html">¿Por qué Quiet?</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <a href="user-interface.html" class="user-icon">
+          <img src="images/user-icon.png" alt="User Icon" class="user-image" />
+        </a>
+      </nav>
+    </header>
+
+    <!-- Contenido principal para Localización -->
+    <main id="inicio" class="location-content">
+      <div class="location-container">
+        <!-- Imagen de localización -->
+        <div class="location-image-container">
+          <img
+            src="images/localizacion.png"
+            alt="Localización Cercana"
+            class="location-image"
+          />
+        </div>
+        <!-- Texto introductorio y botón -->
+        <div class="location-text-container">
+          <h2 class="location-title">Localización</h2>
+          <p class="location-description">
+            Encuentra espacios tranquilos cerca de ti. Descubre parques, zonas
+            recreativas y otros lugares seleccionados por Quiet para ayudarte a
+            reducir el ruido en tu entorno.
+          </p>
+          <!-- Botón para ver ubicaciones cercanas -->
+          <a href="#seccion-localizaciones" class="location-button"
+            >Comenzar Localizacion
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sección de localizaciones dentro de un cuadro -->
+    <section id="seccion-localizaciones" class="data-section-box">
+      <div class="data-header">
+        <h2 class="data-title">Ubicaciones Cercanas</h2>
+        <div class="data-nav-buttons">
+          <button class="nav-button active">Avance</button>
+          <button class="nav-button">Recientes</button>
+          <button class="nav-button">Historial</button>
+        </div>
+      </div>
+      <hr class="data-divider" />
+      <div class="data-cards">
+        <div class="data-card">
+          <h3>Parque San Pablo</h3>
+          <p>
+            Un espacio verde ideal para relajarse. El "Parque San Pablo" ofrece
+            áreas seguras y está a tu disposición para un descanso tranquilo.
+          </p>
+          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+        </div>
+        <div class="data-card">
+          <h3>Urb. Los Andes</h3>
+          <p>
+            Zona residencial con espacios recreativos. "Urb. Los Andes" te
+            permite disfrutar de un entorno seguro y accesible.
+          </p>
+          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+        </div>
+        <div class="data-card">
+          <h3>Residencia San Miguel</h3>
+          <p>
+            Ubicada cerca del mar y rodeada de parques. "Residencia San Miguel"
+            es perfecta para quienes buscan paz y contacto con la naturaleza.
+          </p>
+          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Quiet. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+        <li><a href="#">Soporte</a></li>
+      </ul>
+    </footer>
+    <script src="responsive.js"></script>
+  </body>
+</html>

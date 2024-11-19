@@ -30,7 +30,9 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="about.html">¿Por qué Quiet?</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
         </ul>
         <!-- Botón para iniciar sesión -->
         <a href="login-in.html" class="download-button">Iniciar sesión</a>
@@ -42,6 +44,15 @@
       <section class="hero">
         <!-- Imagen y texto de bienvenida -->
         <img src="images/lema.png" alt="Lema Quiet" class="lema-image" />
+        <!--<h1
+          style="
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
+            font-style: italic;
+          "
+        >
+          "Encuentra paz en cada <span style="font-weight: bold">sonido"</span>
+        </h1>-->
         <div class="subtext-container">
           <p class="subtext">
             Quiet te ayuda a controlar la contaminación sonora y mejorar tu
@@ -52,6 +63,28 @@
       </section>
     </main>
 
+    <div class="social-icons">
+      <a
+        href="https://www.facebook.com/people/Quiett/61568944021904/"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="images/fb.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <img src="images/x.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com/quietoficial/?hl=es target="_blank" class="social-icon">
+        <img src="images/inta.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <img src="images/link.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.youtube.com/@QuieOficial" target="_blank" class="social-icon">
+        <img src="images/yt.png" alt="YouTube" />
+      </a>
+    </div>
+
     <!-- Pie de página con enlaces adicionales -->
     <footer>
       <p>&copy; 2024 Quiet. Todos los derechos reservados.</p>
@@ -61,6 +94,19 @@
         <li><a href="#">Soporte</a></li>
       </ul>
     </footer>
+    <div class="switch-button">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        name="switch-button"
+        id="switch-label"
+        class="switch-button__checkbox"
+      />
+      <!-- Botón -->
+      <label for="switch-label" class="switch-button__label"></label>
+    </div>
+
     <script src="responsive.js"></script>
+    <script src="oscuro.js"></script>
   </body>
 </html>

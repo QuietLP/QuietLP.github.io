@@ -31,6 +31,7 @@ html {
   height: calc(100vh - 150px);
   text-align: center;
   padding: 20px;
+  background-image: url(images/index.jpg);
 }
 
 /* Barra de Navegación */
@@ -146,8 +147,11 @@ header nav .download-button:hover {
   justify-content: center;
   gap: 10px;
   padding: 40px 20px;
-  background-color: #fff;
+  background-image: url(images/recursos.jpg);
   min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-content {
@@ -182,8 +186,8 @@ header nav .download-button:hover {
 }
 
 .about-text {
-  width: 45%;
-  max-width: 450px;
+  width: 55%;
+  max-width: 850px;
   background-color: #f1f1f1;
   padding: 20px;
   border-radius: 8px;
@@ -191,6 +195,34 @@ header nav .download-button:hover {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
+}
+
+/* Estilos para los iconos flotantes de redes sociales */
+.social-icons {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 40px; /* Tamaño de los íconos */
+  height: 40px;
+  display: block;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Hace los íconos redondeados */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
 }
 
 /* Footer */
@@ -240,7 +272,10 @@ footer p {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #f7f7f7;
+  background-image: url(/images/fondo-login.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Contenedor principal del formulario de inicio de sesión */
@@ -571,6 +606,10 @@ footer p {
   margin: 5px 0;
 }
 
+.data-cards img {
+  border-radius: 5px;
+}
+
 /* Contenedor principal para la sección de Localización */
 .location-content {
   display: flex;
@@ -750,6 +789,345 @@ footer p {
   padding: 0;
 }
 
+/* Estilos para la sección de Comunidad */
+.community-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.community-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.community-title {
+  font-size: 2.5rem;
+  color: #30363b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.community-description {
+  font-size: 1.1rem;
+  color: #4b4b4b;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.community-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #272727;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.community-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.community-button:hover {
+  background-color: #333;
+}
+
+/* Estilos para la sección de Ayuda */
+.help-section {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.help-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.help-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.recommendation-card {
+  padding: 25px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-card h3 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.recommendation-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recommendation-list li {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.recommendation-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #000;
+}
+
+.emergency-info {
+  background-color: #fff3f3;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+  border: 1px solid #ffdddd;
+}
+
+.emergency-info h3 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.emergency-steps {
+  padding-left: 20px;
+}
+
+.emergency-steps li {
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Estilos para la sección de Educación */
+.educacion-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.educacion-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.educacion-title {
+  font-size: 2.5rem;
+  color: #30363b;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.educacion-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.educacion-features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #272727;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.educacion-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.educacion-button:hover {
+  background-color: #333;
+}
+
+/* Modo oscuro */
+body.dark-mode .community-section {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .community-title,
+body.dark-mode .help-title {
+  color: #fff;
+}
+
+body.dark-mode .community-description,
+body.dark-mode .help-description {
+  color: #cccccc;
+}
+
+body.dark-mode .feature-card {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .feature-card h3 {
+  color: #fff;
+}
+
+body.dark-mode .feature-card p {
+  color: #cccccc;
+}
+
+body.dark-mode .help-section {
+  background-color: #121212;
+}
+
+body.dark-mode .recommendation-card {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .recommendation-card h3 {
+  color: #fff;
+}
+
+body.dark-mode .recommendation-list li {
+  color: #cccccc;
+}
+
+body.dark-mode .emergency-info {
+  background-color: #2d1f1f;
+  border-color: #3d2828;
+}
+
+body.dark-mode .emergency-info h3 {
+  color: #ff6b6b;
+}
+
+body.dark-mode .emergency-steps li {
+  color: #cccccc;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .community-features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-title,
+  .help-title {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .menu-horizontal {
     flex-direction: column;
@@ -829,4 +1207,212 @@ footer p {
 
 .close-menu {
   display: none;
+}
+
+:root {
+  --color-green: #000000;
+  --color-red: #8795e2;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+.switch-button {
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.switch-button .switch-button__label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-button);
+  content: "";
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(1.5rem);
+}
+/* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Opcional: Ajusta otros elementos */
+body.dark-mode header {
+  background-color: #1f1f1f;
+}
+
+body.dark-mode .button-group a {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+/* Modo oscuro para el header y la barra de navegación */
+body.dark-mode header {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode header a {
+  color: #fff !important;
+}
+
+body.dark-mode nav {
+  background-color: #000 !important;
+}
+
+body.dark-mode header img {
+  filter: brightness(0) invert(1);
+}
+
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.dark-mode section {
+  background-color: #ffffff00;
+  color: #fff;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #fff;
+}
+
+/* Cartas de información en modo oscuro */
+body.dark-mode .data-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+/* Botones en modo oscuro */
+body.dark-mode .location-card-button,
+body.dark-mode .location-button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* Ajustes adicionales para imágenes */
+body.dark-mode .location-image-container {
+  background-color: #000;
+}
+
+/* Pie de página */
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+/* Líneas divisoras */
+body.dark-mode hr {
+  border-color: #333;
+}
+/* Modo oscuro para los títulos y descripciones */
+body.dark-mode .location-title {
+  color: #ffffff;
+}
+
+body.dark-mode .location-description {
+  color: #cccccc;
+}
+
+body.dark-mode .location-container {
+  background-color: #1f1f1f;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .location-button {
+  background-color: #444444;
+}
+
+body.dark-mode .location-button:hover {
+  background-color: #666666;
+}
+/* Modo oscuro: estilos para la sección de medición */
+body.dark-mode .measurement-title,
+body.dark-mode .location-title {
+  color: #ffffff; /* Títulos en blanco */
+}
+
+body.dark-mode .measurement-description,
+body.dark-mode .location-description {
+  color: #cccccc; /* Descripciones en gris claro */
+}
+
+body.dark-mode .measurement-container,
+body.dark-mode .location-container {
+  background-color: #1f1f1f; /* Fondo oscuro para los contenedores */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ajuste de sombras */
+}
+
+body.dark-mode .measurement-button,
+body.dark-mode .location-button {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+body.dark-mode .measurement-button:hover,
+body.dark-mode .location-button:hover {
+  background-color: #666666;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .measurement-content {
+  background-color: transparent;
+}
+
+body.dark-mode .location-content {
+  background-color: transparent;
+}
+.lema-container {
+  background: transparent !important;
+}
+
+body.dark-mode .lema-container {
+  background: transparent !important;
+}
+body.dark-mode .lema-image {
+  filter: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+}
+body.dark-mode header img:not(.lema-image) {
+  filter: brightness(0) invert(1);
 }

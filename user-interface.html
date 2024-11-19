@@ -13,9 +13,10 @@
   </head>
   <body class="user-interface-page">
     <!-- Encabezado con logo y ícono de usuario -->
+        <!-- Encabezado con barra de navegación -->
     <header>
       <nav>
-        <!-- Logo de Quiet -->
+        <!-- Logo -->
         <a href="index.html" class="logo">
           <img src="images/quiet.png" alt="Quiet Logo" />
         </a>
@@ -27,35 +28,60 @@
           <button class="close-menu" aria-label="Cerrar menú">
             <img src="img/close-icon.svg" alt="cerrar menú" />
           </button>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">¿Por qué Quiet?</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
         </ul>
-        <!-- Ícono de perfil de usuario -->
-        <a href="user-interface.html" class="user-icon">
-          <img src="images/user-icon.png" alt="User Icon" class="user-image" />
-        </a>
+        <!-- Botón para iniciar sesión -->
+        <a href="login-in.html" class="download-button">Iniciar sesión</a>
       </nav>
     </header>
 
     <!-- Contenido principal de la interfaz de usuario -->
     <main id="inicio" class="user-content">
       <section class="welcome-section">
-        <!-- Imagen de bienvenida -->
+        <!-- Imagen de bienvenida 
         <img
           src="images/welcome-user.png"
           alt="Bienvenido Usuario"
           class="welcome-user"
         />
-      </section>
-
+      </section>-->
+      <h2 style="font-size: 40px; font-weight:400; font-family: 'Times New Roman', Times, serif">!Bienvenido/a de vuelta¡</h2>
+      <br/>
+      <h1 style="font-size:50px; font-weight: bold; font-family: 'Times New Roman', Times, serif">¿Qué háras hoy?</h1>
+      <br/>
       <!-- Grupo de botones para funcionalidades principales -->
       <div class="button-group">
         <a href="user-measurement.html" class="explore-button">Medición</a>
         <a href="user-location.html" class="explore-button">Localización</a>
       </div>
     </main>
+
+    <div class="social-icons">
+      <a
+        href="https://www.facebook.com/people/Quiett/61568944021904/"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="images/fb.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <img src="images/x.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com/quietoficial/?hl=es target="_blank" class="social-icon">
+        <img src="images/inta.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <img src="images/link.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.youtube.com/@QuieOficial" target="_blank" class="social-icon">
+        <img src="images/yt.png" alt="YouTube" />
+      </a>
+    </div>
 
     <!-- Pie de página con enlaces adicionales -->
     <footer>
@@ -66,6 +92,19 @@
         <li><a href="#">Soporte</a></li>
       </ul>
     </footer>
+
+    <div class="switch-button">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        name="switch-button"
+        id="switch-label"
+        class="switch-button__checkbox"
+      />
+      <!-- Botón -->
+      <label for="switch-label" class="switch-button__label"></label>
+    </div>
     <script src="responsive.js"></script>
+    <script src="oscuro.js"></script>
   </body>
 </html>

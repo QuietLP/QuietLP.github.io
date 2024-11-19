@@ -12,8 +12,9 @@
   </head>
   <body class="user-interface-page">
     <!-- Encabezado con barra de navegación -->
-    <header>
+        <header>
       <nav>
+        <!-- Logo -->
         <a href="index.html" class="logo">
           <img src="images/quiet.png" alt="Quiet Logo" />
         </a>
@@ -25,43 +26,17 @@
           <button class="close-menu" aria-label="Cerrar menú">
             <img src="img/close-icon.svg" alt="cerrar menú" />
           </button>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">¿Por qué Quiet?</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
         </ul>
-        <a href="user-interface.html" class="user-icon">
-          <img src="images/user-icon.png" alt="User Icon" class="user-image" />
-        </a>
+        <!-- Botón para iniciar sesión -->
+        <a href="login-in.html" class="download-button">Iniciar sesión</a>
       </nav>
     </header>
-
-    <!-- Contenido principal para Localización -->
-    <main id="inicio" class="location-content">
-      <div class="location-container">
-        <!-- Imagen de localización -->
-        <div class="location-image-container">
-          <img
-            src="images/localizacion.png"
-            alt="Localización Cercana"
-            class="location-image"
-          />
-        </div>
-        <!-- Texto introductorio y botón -->
-        <div class="location-text-container">
-          <h2 class="location-title">Localización</h2>
-          <p class="location-description">
-            Encuentra espacios tranquilos cerca de ti. Descubre parques, zonas
-            recreativas y otros lugares seleccionados por Quiet para ayudarte a
-            reducir el ruido en tu entorno.
-          </p>
-          <!-- Botón para ver ubicaciones cercanas -->
-          <a href="#seccion-localizaciones" class="location-button"
-            >Comenzar Localizacion
-          </a>
-        </div>
-      </div>
-    </main>
 
     <!-- Sección de localizaciones dentro de un cuadro -->
     <section id="seccion-localizaciones" class="data-section-box">
@@ -81,7 +56,7 @@
             Un espacio verde ideal para relajarse. El "Parque San Pablo" ofrece
             áreas seguras y está a tu disposición para un descanso tranquilo.
           </p>
-          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+          <a href="#ubicacion-san-pablo" class="location-card-button">Ver ubicación completa →</a>
         </div>
         <div class="data-card">
           <h3>Urb. Los Andes</h3>
@@ -89,7 +64,7 @@
             Zona residencial con espacios recreativos. "Urb. Los Andes" te
             permite disfrutar de un entorno seguro y accesible.
           </p>
-          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+          <a href="#ubicacion-andes" class="location-card-button">Ver ubicación completa →</a>
         </div>
         <div class="data-card">
           <h3>Residencia San Miguel</h3>
@@ -97,10 +72,98 @@
             Ubicada cerca del mar y rodeada de parques. "Residencia San Miguel"
             es perfecta para quienes buscan paz y contacto con la naturaleza.
           </p>
-          <a href="#" class="location-card-button">Ver ubicación completa →</a>
+          <a href="#ubicacion-san-miguel" class="location-card-button">Ver ubicación completa →</a>
         </div>
       </div>
     </section>
+
+    <section id="ubicacion-andes" class="location-content">
+      <div class="location-container">
+        <div class="location-image-container">
+          <img
+            class="location-image"
+            src="/images/localizacion2.png"
+            alt="Urb. Los Andes"
+          />
+        </div>
+        <div class="location-text-container">
+          <h2 class="location-title">Urb. Los Andes</h2>
+          <p class="location-description">
+            Se han analizado los datos.<br />
+            Nivel de ruido: 50-60 dB (bajo).<br />
+            Ruta más cercana: 10 minutos.<br />
+            Calidad del lugar: Poco concurrido.
+          </p>
+          <a href="#" class="location-button">Abrir en Mapas</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion-san-pablo" class="location-content">
+      <div class="location-container">
+        <div class="location-image-container">
+          <img
+            class="location-image"
+            src="/images/parque.png"
+            alt="Parque San Pablo"
+          />
+        </div>
+        <div class="location-text-container">
+          <h2 class="location-title">Parque San Pablo</h2>
+          <p class="location-description">
+            Se han analizado los datos.<br />
+            Nivel de ruido: 45-50 dB (bajo).<br />
+            Ruta más cercana: 10 minutos.<br />
+            Calidad del lugar: Medio concurrido.
+          </p>
+          <a href="#" class="location-button">Abrir en Mapas</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ubicacion-san-miguel" class="location-content">
+      <div class="location-container">
+        <div class="location-image-container">
+          <img
+            class="location-image"
+            src="/images/sanmi.png"
+            alt="Residencia San Miguel"
+          />
+        </div>
+        <div class="location-text-container">
+          <h2 class="location-title">Residencia San Miguel</h2>
+          <p class="location-description">
+            Se han analizado los datos.<br />
+            Nivel de ruido: 40-55 dB (bajo).<br />
+            Ruta más cercana: 25 minutos.<br />
+            Calidad del lugar: Poco concurrido.
+          </p>
+          <a href="#" class="location-button">Abrir en Mapas</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-icons">
+      <a
+        href="https://www.facebook.com/people/Quiett/61568944021904/"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="images/fb.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <img src="images/x.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com/quietoficial/?hl=es target="_blank" class="social-icon">
+        <img src="images/inta.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <img src="images/link.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.youtube.com/@QuieOficial" target="_blank" class="social-icon">
+        <img src="images/yt.png" alt="YouTube" />
+      </a>
+    </div>
 
     <!-- Pie de página -->
     <footer>
@@ -111,6 +174,18 @@
         <li><a href="#">Soporte</a></li>
       </ul>
     </footer>
+    <div class="switch-button">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        name="switch-button"
+        id="switch-label"
+        class="switch-button__checkbox"
+      />
+      <!-- Botón -->
+      <label for="switch-label" class="switch-button__label"></label>
+    </div>
     <script src="responsive.js"></script>
+    <script src="oscuro.js"></script>
   </body>
 </html>

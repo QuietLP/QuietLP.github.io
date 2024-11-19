@@ -13,53 +13,35 @@
   </head>
   <body class="about-page">
     <!-- Encabezado con barra de navegación -->
-    <header>
-      <nav>
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-          <img src="images/quiet.png" alt="Quiet Logo" />
-        </a>
-        <!-- Enlaces de navegación -->
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="about.html">¿Por qué Quiet?</a></li>
-          <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <!-- Botón para iniciar sesión -->
-        <a href="login-in.html" class="download-button">Iniciar sesión</a>
-      </nav>
-    </header>
+        <!-- Encabezado con barra de navegación -->
+        <header>
+          <nav>
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+              <img src="images/quiet.png" alt="Quiet Logo" />
+            </a>
+            <button class="open-menu" aria-label="Abrir menú">
+              <img src="img/hamburger-icon.svg" alt="abrir menú" />
+            </button>
+            <!-- Enlaces de navegación -->
+            <ul class="nav-links menu-horizontal">
+              <button class="close-menu" aria-label="Cerrar menú">
+                <img src="img/close-icon.svg" alt="cerrar menú" />
+              </button>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="about.html">¿Por qué Quiet?</a></li>
+              <li><a href="recursos.html">Recursos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="comunidad.html">Comunidad</a></li>
+              <li><a href="consejos.html">Consejos</a></li>
+            </ul>
+            <!-- Botón para iniciar sesión -->
+            <a href="login-in.html" class="download-button">Iniciar sesión</a>
+          </nav>
+        </header>
   </body>
 </html>
-<!--Contenido de la pagina-->
 
-    <!-- Contenido principal para Localización -->
-    <main id="inicio" class="location-content">
-      <div class="location-container">
-        <!-- Imagen de localización -->
-        <div class="location-image-container">
-          <img
-            src="images/localizacion.png"
-            alt="Localización Cercana"
-            class="location-image"
-          />
-        </div>
-        <!-- Texto introductorio y botón -->
-        <div class="location-text-container">
-          <h2 class="location-title">Localización</h2>
-          <p class="location-description">
-            Encuentra espacios tranquilos cerca de ti. Descubre parques, zonas
-            recreativas y otros lugares seleccionados por Quiet para ayudarte a
-            reducir el ruido en tu entorno.
-          </p>
-          <!-- Botón para ver ubicaciones cercanas -->
-          <a href="user-location.html" class="location-button">Comenzar</a>
-        </div>
-      </div>
-    </main>
-
-    
     <!-- Contenido principal para Medición -->
     <main id="inicio" class="measurement-content">
       <div class="measurement-container">
@@ -81,8 +63,33 @@
           </p>
           <!-- Botón que lleva a la sección de datos -->
           <a href="user-measurement.html" class="measurement-button"
-            >Comenzar</a
+            >Comenzar Medición</a
           >
+        </div>
+      </div>
+    </main>
+
+    <!-- Contenido principal para Localización -->
+    <main id="inicio" class="location-content">
+      <div class="location-container">
+        <!-- Imagen de localización -->
+        <div class="location-image-container">
+          <img
+            src="images/localizacion.png"
+            alt="Localización Cercana"
+            class="location-image"
+          />
+        </div>
+        <!-- Texto introductorio y botón -->
+        <div class="location-text-container">
+          <h2 class="location-title">Localización</h2>
+          <p class="location-description">
+            Encuentra espacios tranquilos cerca de ti. Descubre parques, zonas
+            recreativas y otros lugares seleccionados por Quiet para ayudarte a
+            reducir el ruido en tu entorno.
+          </p>
+          <!-- Botón para ver ubicaciones cercanas -->
+          <a href="user-location.html" class="location-button">Comenzar Localizacion</a>
         </div>
       </div>
     </main>
@@ -96,6 +103,19 @@
           <li><a href="#">Soporte</a></li>
         </ul>
       </footer>
+      <div class="switch-button">
+        <!-- Checkbox -->
+        <input
+          type="checkbox"
+          name="switch-button"
+          id="switch-label"
+          class="switch-button__checkbox"
+        />
+        <!-- Botón -->
+        <label for="switch-label" class="switch-button__label"></label>
+      </div>
+      <script src="responsive.js"></script>
+      <script src="oscuro.js"></script>
     </body>
   </html>
   

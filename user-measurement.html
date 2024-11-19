@@ -14,6 +14,7 @@
     <!-- Encabezado con barra de navegación -->
     <header>
       <nav>
+        <!-- Logo -->
         <a href="index.html" class="logo">
           <img src="images/quiet.png" alt="Quiet Logo" />
         </a>
@@ -25,43 +26,17 @@
           <button class="close-menu" aria-label="Cerrar menú">
             <img src="img/close-icon.svg" alt="cerrar menú" />
           </button>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="index.html">Inicio</a></li>
           <li><a href="about.html">¿Por qué Quiet?</a></li>
           <li><a href="recursos.html">Recursos</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="comunidad.html">Comunidad</a></li>
+          <li><a href="consejos.html">Consejos</a></li>
         </ul>
-        <a href="user-interface.html" class="user-icon">
-          <img src="images/user-icon.png" alt="User Icon" class="user-image" />
-        </a>
+        <!-- Botón para iniciar sesión -->
+        <a href="login-in.html" class="download-button">Iniciar sesión</a>
       </nav>
     </header>
-
-    <!-- Contenido principal para Medición -->
-    <main id="inicio" class="measurement-content">
-      <div class="measurement-container">
-        <!-- Imagen de medición -->
-        <div class="measurement-image-container">
-          <img
-            src="images/medicion.png"
-            alt="Medición de Ruido"
-            class="measurement-image"
-          />
-        </div>
-        <!-- Texto introductorio y botón -->
-        <div class="measurement-text-container">
-          <h2 class="measurement-title">Medición de Ruido</h2>
-          <p class="measurement-description">
-            Descubre los niveles de ruido en tu entorno en tiempo real. Con
-            nuestra herramienta de medición, puedes localizar áreas más
-            tranquilas y reducir la contaminación acústica en tu vida diaria.
-          </p>
-          <!-- Botón que lleva a la sección de datos -->
-          <a href="#seccion-datos" class="measurement-button"
-            >Comenzar Medición</a
-          >
-        </div>
-      </div>
-    </main>
 
     <!-- Nueva sección de datos dentro de un cuadro -->
     <section id="seccion-datos" class="data-section-box">
@@ -96,6 +71,28 @@
       </div>
     </section>
 
+    <div class="social-icons">
+      <a
+        href="https://www.facebook.com/people/Quiett/61568944021904/"
+        target="_blank"
+        class="social-icon"
+      >
+        <img src="images/fb.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+        <img src="images/x.png" alt="Twitter" />
+      </a>
+      <a href="https://www.instagram.com/quietoficial/?hl=es target="_blank" class="social-icon">
+        <img src="images/inta.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="social-icon">
+        <img src="images/link.png" alt="LinkedIn" />
+      </a>
+      <a href="https://www.youtube.com/@QuieOficial" target="_blank" class="social-icon">
+        <img src="images/yt.png" alt="YouTube" />
+      </a>
+    </div>
+
     <!-- Pie de página -->
     <footer>
       <p>&copy; 2024 Quiet. Todos los derechos reservados.</p>
@@ -105,6 +102,18 @@
         <li><a href="#">Soporte</a></li>
       </ul>
     </footer>
+    <div class="switch-button">
+      <!-- Checkbox -->
+      <input
+        type="checkbox"
+        name="switch-button"
+        id="switch-label"
+        class="switch-button__checkbox"
+      />
+      <!-- Botón -->
+      <label for="switch-label" class="switch-button__label"></label>
+    </div>
     <script src="responsive.js"></script>
+    <script src="oscuro.js"></script>
   </body>
 </html>
